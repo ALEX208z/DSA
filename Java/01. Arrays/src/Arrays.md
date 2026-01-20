@@ -1,0 +1,1 @@
+- Non-decreasing order means ascending order but it can have duplicates.
