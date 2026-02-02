@@ -63,3 +63,8 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
         return index;
     }
 }
+
+// Approach -
+// run binary search twice
+// first time to find the first occurrence
+// second time to find the last occurrence

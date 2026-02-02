@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00. Basics/00. Basics.iml" filepath="$PROJECT_DIR$/00. Basics/00. Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01. Arrays/01. Arrays.iml" filepath="$PROJECT_DIR$/01. Arrays/01. Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02. Strings/02. Strings.iml" filepath="$PROJECT_DIR$/02. Strings/02. Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Searching/03. Searching.iml" filepath="$PROJECT_DIR$/03. Searching/03. Searching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04. Sorting/04. Sorting.iml" filepath="$PROJECT_DIR$/04. Sorting/04. Sorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05. Recursion/05. Recursion.iml" filepath="$PROJECT_DIR$/05. Recursion/05. Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+    </modules>
+  </component>
+</project>
