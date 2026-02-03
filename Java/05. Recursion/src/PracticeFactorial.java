@@ -36,4 +36,9 @@ public class PracticeFactorial {
         if (n <= 1) return 1;            // base case
         return n * factorial3(n-1);   // recursive case
     }
+
+    // 5! = 5 * 4!
+    // 4! = 4 * 3!
+    // 3! = 3 * 2!
+    // 2! = 2 * 1!
 }
