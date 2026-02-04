@@ -3,7 +3,7 @@ package backtracking;
 
 public class NQueens {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 5;
         boolean[][] board = new boolean[n][n];
         System.out.println(queens(board,0));
     }
@@ -136,3 +136,7 @@ public class NQueens {
 //Backtracking = Try → Explore → Undo
 //Base case: When row == n (all queens placed)
 //Always undo (backtrack) after recursive call
+
+
+// Whenever we put a potential answer somewhere if that is going to affect the future answer be that right or wrong
+// When a choice can affect future answers, use backtracking
