@@ -46,3 +46,12 @@ tailRecursion(n - 1);    // Recurse FIRST (tail)
 System.out.println(n);   // Process AFTER
 }
 // Prints: 1,2,3,4 (also forward, but different logic!)
+
+
+
+Subsets backtracking
+Key Takeaways ---------------------
+Number of subsets: Always 2^n for n unique elements
+Backtracking template: Choose → Explore → Unchoose
+Avoiding duplicates: Sort + skip same elements at same level
+Space consideration: Backtracking uses O(n) extra space, others use O(n × 2^n)

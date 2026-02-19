@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package introduction;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,8 +16,8 @@ public class Main {
         Student[] students = new Student[5];
 
         // just declaring
-//        Student Ayush;
-//        Ayush = new Student();
+//        introduction.Student Ayush;
+//        Ayush = new introduction.Student();
 
         Student Ayush = new Student(15,"Anshuman Ayush",85.4f);
         Student Alex = new Student(11,"Alex Summers", 90.3f);
@@ -77,12 +77,12 @@ class Student {
 
     Student() {
         // this is how you call a constructor from another constructor
-        // internally : new Student (13, "default person", 100.0f);
+        // internally : new introduction.Student (13, "default person", 100.0f);
         this(13, "default person", 100.0f);
 
     }
 
-        // Stundent aman = new Student (17, "Aman", 89.7f);
+        // Stundent aman = new introduction.Student (17, "Aman", 89.7f);
         // here, this will be replaced with aman
         Student (int rno, String name, float marks) {
             this.rno = rno;
