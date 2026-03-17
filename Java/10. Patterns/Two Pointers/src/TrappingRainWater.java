@@ -61,7 +61,38 @@ public class TrappingRainWater {
         }
         return result;
     }
-    // This works but it's slow : we're doing redundant work by scanning left and right for every element;
+    // This works, but it's slow : we're doing redundant work by scanning left and right for every element;
+
+
+
+    // Prefix/Suffix  - Time : O(n) | Space : O(n)
+    public int trap3(int[] height) {
+        int n = height.length;
+        if (n == 0) return 0;
+
+        // 1. Create prefix max array
+        int[] prefixMax = new int[n];
+        prefixMax[0] = height[0];
+        for (int i = 1; i < n; i++) {
+            prefixMax[i] = Math.max(prefixMax[i-1], height[i]);
+        }
+
+        // 2. Create suffix max array
+        int[] suffixMax = new int[n];
+        suffixMax[n-1] = height[n-1];
+        for (int i = n-2; i >= 0; i--) {
+            suffixMax[i] = Math.max(suffixMax[i+1], height[i]);
+        }
+
+        // 3. Calculate total water
+        int totalWater = 0;
+        for (int i = 0; i < n; i++) {
+            int minHeight = Math.min(prefixMax[i], suffixMax[i]);
+            totalWater += minHeight - height[i];
+        }
+
+        return totalWater;
+    }
 
 
 
